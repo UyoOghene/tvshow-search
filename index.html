@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tv shows search</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>TV Show Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
-    <h1 id="title">Tv show search</h1>
-    <form id="formsearch">
-        <input type="text" placeholder="Enter Title" id="inputtxt">
-        <button id="butt">search</button>
-    </form>
-    <div id="container">
-        <h1 id="showTitle"></h1>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 id="title">TV Show Explorer</h1>
+            <p class="tagline">Discover your next binge-worthy series</p>
+            <form id="formsearch">
+                <div class="search-container">
+                    <input type="text" placeholder="Search for TV shows..." id="inputtxt">
+                    <button id="butt"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <script src="app.js"></script>
-   
+
+    <div class="main-content">
+        <div id="container">
+            <div class="welcome-message">
+                <h2>Welcome to TV Show Explorer!</h2>
+                <p>Search for your favorite TV shows to see details and posters.</p>
+                <div class="trending-shows">
+                    <p>Try searching for: <span class="trending-tag">Stranger Things</span> <span class="trending-tag">The Office</span> <span class="trending-tag">Breaking Bad</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with <i class="fas fa-heart"></i> by Mystique</p>
+    </footer>
+
+    <script src="/app.js"></script>
 </body>
 </html>
